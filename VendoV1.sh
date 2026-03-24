@@ -30,7 +30,7 @@ sudo apt install -y php-mbstring
 sudo apt install -y php-xml
 sudo apt install -y php-zip
 
-pip3 install requests
+sudo pip3 install requests
 sudo apt install -y supervisor
 sudo apt install -y dphys-swapfile
 sudo systemctl enable dphys-swapfile
