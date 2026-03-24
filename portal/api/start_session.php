@@ -9,7 +9,7 @@ $radioId = $_POST['radioId'];
 $site = $_POST['site'];
 $minutes = intval($_POST['minutes']);
 
-$expire = $minutes * 60 * 1000 * 1000; // microseconds
+$expire = $minutes * 60000; // microseconds
 
 OmadaAPI::login();
 

@@ -10,6 +10,9 @@
     "controller_id": "controller_id",
     "operator_username": "username",
     "operator_password": "password",
+    "site_name": "site_name",
+    "ssid_name": "ssid_name",
+    "ap_mac": "ap_mac",
 
     "packages": {
         "1":  { "hours": 0, "minutes": 15 },

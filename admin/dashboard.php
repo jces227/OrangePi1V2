@@ -25,6 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $config['controller_id'] = $_POST['controller_id'];
     $config['operator_username'] = $_POST['operator_username'];
     $config['operator_password'] = $_POST['operator_password'];
+    $config['site_name'] = $_POST['site_name'];
+    $config['ssid_name'] = $_POST['ssid_name'];
+    $config['ap_mac'] = $_POST['ap_mac'];
 
     // Save packages with hours + minutes
     $config['packages']['1'] = [
@@ -112,6 +115,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <label>Operator Password:</label>
         <input type="password" name="operator_password" value="<?php echo htmlspecialchars($config['operator_password']); ?>">
+
+        <label>Site Name:</label>
+        <input type="text" name="site_name" value="<?php echo htmlspecialchars($config['site_name']); ?>">
+
+        <label>SSID Name:</label>
+        <input type="text" name="ssid_name" value="<?php echo htmlspecialchars($config['ssid_name']); ?>">
+
+        <label>AP MAC Address:</label>
+        <input type="text" name="ap_mac" value="<?php echo htmlspecialchars($config['ap_mac']); ?>">
 
 	<hr>
 	<h3>Time Packages (Hours & Minutes)</h3>

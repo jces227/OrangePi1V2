@@ -31,8 +31,8 @@ $PACKAGES = $config['packages'] ?? [];
 // Optional: make it a constant too
 define("PACKAGES", $PACKAGES);
 
-define("SITE_NAME", "Burias wifi");  // your Omada site name
+define("SITE_NAME", $config['site_name'] ?? '');  // your Omada site name
 define("RADIO_ID_24G", "0");
 define("RADIO_ID_5G", "1");
-define("SSID_NAME", "BGS sample");
-define("AP_MAC", "3C:6A:D2:9F:4A:8F");  // MAC of AP (you can get it from Omada controller)
+define("SSID_NAME", $config['ssid_name'] ?? '');
+define("AP_MAC", $config['ap_mac'] ?? '');  // MAC of AP (you can get it from Omada controller)
