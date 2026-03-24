@@ -1,0 +1,20 @@
+{
+    "admin_username": "omada",
+    "admin_password": "$2y$10$jCJOs8/SgnxyXYJO/w2dvuEvS52nacegqPZ3SNsUlj2hdnO1TLMIG",
+
+    "wifi_name": "Omada",
+    "logo_file": "logo.png",
+
+    "controller_ip": "controller_ip",
+    "port": "8043",
+    "controller_id": "controller_id",
+    "operator_username": "username",
+    "operator_password": "password",
+
+    "packages": {
+        "1":  { "hours": 0, "minutes": 15 },
+        "5":  { "hours": 2, "minutes": 0 },
+        "10": { "hours": 5, "minutes": 0 },
+        "20": { "hours": 12, "minutes": 0 }
+    }
+}

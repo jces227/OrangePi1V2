@@ -1,0 +1,26 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    all-eth-interfaces:
+      match:
+        name: "e*"
+      dhcp4: yes       # WAN interfaces get IP from main router
+      dhcp6: yes
+      ipv6-privacy: yes
+
+    all-lan-interfaces:
+      match:
+        name: "lan[0-9]*"
+      dhcp4: no
+      dhcp6: no
+      addresses:
+        - 10.0.0.1/24   # LAN gateway
+      ipv6-privacy: yes
+
+    all-wan-interfaces:
+      match:
+        name: "wan[0-9]*"
+      dhcp4: yes
+      dhcp6: yes
+      ipv6-privacy: yes

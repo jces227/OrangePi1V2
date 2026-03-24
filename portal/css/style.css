@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    padding: 40px;
+    background: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    color: white;
+
+    /* 🔥 THIS CENTERS CONTENT */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    max-width: 2000px;
+    margin-bottom: 20px;
+}
+
+/* WiFi Name */
+.wifi-name {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Timer */
+.timer {
+    font-size: 150px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+/* Client Info */
+.client-info {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/* Balance */
+.balance {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    font-size: 50px;
+    padding: 50px 90px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Status */
+.status {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+/* Modal background */
+.modal {
+    display: none;              /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.modal.show {
+    display: flex;              /* Only show when class is added */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Modal box */
+.modal-content {
+    background: #222;
+    padding: 40px;
+    border-radius: 15px;
+    width: 800px;
+    max-width: 90%;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+
+    font-size: 50px; /* change to any size you like */
+    line-height: 1; /* optional: makes text more readable */
+    color: white;      /* optional: change text color */
+}
+
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #444;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#progressFill {
+    height: 100%;
+    width: 100%;
+    background: limegreen;
+    transition: width 1s linear;
+}

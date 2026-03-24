@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Coin Acceptor Daemon
+After=network.target
+
+[Service]
+ExecStart=/opt/coin_env/bin/python /usr/local/bin/coin_daemon.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
